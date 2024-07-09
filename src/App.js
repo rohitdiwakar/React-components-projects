@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Accordian from "./components/accordian";
+import Randomcolorgenerator from "./components/randomcolorgenerator";
+import StarRating from "./components/star-rating";
+import ImageSlider from "./components/image-slider";
+import LoadButton from "./components/load-more-button";
+import TreeView from "./components/tree-view";
+// import menus from "./components/tree-view/data";
+import QRCodeGenerator from "./components/qr-code-generator";
+import LightDarkMode from "./components/theme-change";
+import ScrollIndicator from "./components/scroll-indicator";
+import TabTest from "./components/custom-tab/tab-test";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Accordian/> */}
+      {/* <Randomcolorgenerator/> */}
+      {/* <StarRating/> */}
+      {/* <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={'10'} /> */}
+      {/* <LoadButton/> */}
+
+      {/* <QRCodeGenerator/> */}
+      {/* <LightDarkMode /> */}
+      {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'} /> */}
+
+      <TabTest/>
     </div>
   );
 }
