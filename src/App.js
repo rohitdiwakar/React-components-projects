@@ -11,6 +11,8 @@ import LightDarkMode from "./components/theme-change";
 import ScrollIndicator from "./components/scroll-indicator";
 import TabTest from "./components/custom-tab/tab-test";
 import ModalTest from "./components/custom-modal-popup/modal-test";
+import GithubProfileFinder from "./components/github-profile-finder";
+import SearchAuto from "./components/search-autocomplete";
 function App() {
   return (
     <div className="App">
@@ -26,7 +28,9 @@ function App() {
 
       {/* <TabTest/> */}
 
-      <ModalTest/>
+      {/* <ModalTest/> */}
+      {/* <GithubProfileFinder/> */}
+      <SearchAuto/>
     </div>
   );
 }
