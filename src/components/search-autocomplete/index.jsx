@@ -22,10 +22,10 @@ const SearchAuto = () => {
       setShowDropdown(false);
     }
   }
-  function handleClick(event){
-    setShowDropdown(false)
-    setSearchParam(event.target.innerText)
-    setFilteredUsers([])
+  function handleClick(event) {
+    setShowDropdown(false);
+    setSearchParam(event.target.innerText);
+    setFilteredUsers([]);
   }
 
   async function fetchListOfUsers() {
@@ -64,7 +64,9 @@ const SearchAuto = () => {
         />
       )}
 
-      {showDropdown && <Suggestions handleClick={handleClick} data={filteredUsers} />}
+      {showDropdown && (
+        <Suggestions handleClick={handleClick} data={filteredUsers} />
+      )}
     </div>
   );
 };
